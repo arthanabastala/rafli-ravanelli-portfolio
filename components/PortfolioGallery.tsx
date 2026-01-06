@@ -2,6 +2,20 @@ import React from 'react';
 import Section from './ui/Section';
 
 const PortfolioGallery: React.FC = () => {
+  const smkWorks = [
+    { src: '/Event-Poster.jpg', alt: 'Event Banner for SMK Madinatulquran', title: 'Tumbnail Event Post' },
+    { src: '/mq-instagram-story.jpg', alt: 'Instagram Story design for SMK Madinatulquran', title: 'PPDB Poster' },
+    { src: '/mq-documentation.jpg', alt: 'Event documentation for SMK Madinatulquran', title: 'Instagram Post' },
+    { src: '/mqfest-poster.jpg', alt: 'MQFest Celebration Event Promotional Poster', title: 'MQFest Poster' }
+  ];
+
+  const experimentalWorks = [
+    { src: '/exp-visual-01.jpg', aspect: '4/5', span: 'col-span-1' },
+    { src: '/exp-visual-02.jpg', aspect: '4/5', span: 'col-span-1' },
+    { src: '/exp-visual-03.jpg', aspect: '9/16', span: 'col-span-1' },
+    { src: '/exp-visual-04.jpg', aspect: '9/16', span: 'col-span-1' }
+  ];
+
   return (
     <Section id="portfolio" className="bg-white">
       <div className="max-w-6xl mx-auto">
@@ -51,39 +65,33 @@ const PortfolioGallery: React.FC = () => {
               <p className="text-neutral-500 mt-2">Supporting school branding, events, and information delivery.</p>
            </div>
            
-           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="md:col-span-2 h-64 bg-neutral-100 rounded-xl border border-neutral-100 relative overflow-hidden group">
-                 <img
-                    src="/mq-event-banner.jpg"
-                    alt="Event Banner for SMK Madinatulquran"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                 />
-                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all"></div>
-              </div>
-              <div className="h-64 bg-neutral-100 rounded-xl border border-neutral-100 relative overflow-hidden group">
-                 <img
-                    src="/mq-instagram-story.jpg"
-                    alt="Instagram Story design for SMK Madinatulquran"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                 />
-                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all"></div>
-              </div>
-              <div className="h-64 bg-neutral-100 rounded-xl border border-neutral-100 relative overflow-hidden group">
-                 <img
-                    src="/mq-documentation.jpg"
-                    alt="Event documentation for SMK Madinatulquran"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                 />
-                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all"></div>
-              </div>
-              <div className="md:col-span-2 h-64 bg-neutral-100 rounded-xl border border-neutral-100 relative overflow-hidden group">
-                 <img
+           <div>
+             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {smkWorks.map((work) => (
+                  <div key={work.src} className="aspect-[4/5] bg-neutral-100 rounded-xl border border-neutral-100 shadow-sm relative group overflow-hidden transform hover:-translate-y-1 transition-all duration-300">
+                      <img
+                          src={work.src}
+                          alt={work.alt}
+                          className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                         <p className="text-white text-xs font-medium">{work.title}</p>
+                      </div>
+                  </div>
+                ))}
+             </div>
+
+             <div className="mt-4 aspect-[3/1] bg-neutral-100 rounded-xl border border-neutral-100 shadow-sm relative group overflow-hidden">
+                <img
                     src="/mqfest-banner.jpg"
-                    alt="MQFest Celebration Event Promotional Poster for SMK Madinatulquran"
+                    alt="Main Event Banner"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                 />
-                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all"></div>
-              </div>
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10"></div>
+                <div className="absolute bottom-0 left-0 p-6">
+                  <h4 className="text-white text-xl font-bold">School Event Promotion</h4>
+                </div>
+             </div>
            </div>
         </div>
 
@@ -96,15 +104,15 @@ const PortfolioGallery: React.FC = () => {
            </div>
            
            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {['/exp-visual-01.jpg', '/exp-visual-02.jpg', '/exp-visual-03.jpg', '/exp-visual-04.jpg'].map((src, index) => (
-                <div key={src} className="aspect-square bg-neutral-100 rounded-xl border border-neutral-100 shadow-sm relative group overflow-hidden transform hover:-translate-y-1 transition-all duration-300">
+              {experimentalWorks.map((work, index) => (
+                <div key={work.src} className={`md:col-span-2 aspect-[${work.aspect}] bg-neutral-100 rounded-xl border border-neutral-100 shadow-sm relative group overflow-hidden transform hover:-translate-y-1 transition-all duration-300`}>
                     <img
-                        src={src}
+                        src={work.src}
                         alt={`Experimental Visual ${index + 1}`}
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                       <p className="text-white text-xs font-medium">Visual Experiment 0{index + 1}</p>
+                       <p className="text-white text-xs font-medium">Visual Post & Story 0{index + 1}</p>
                     </div>
                 </div>
               ))}
