@@ -32,7 +32,7 @@ const Tools: React.FC = () => {
     { name: 'Canva', category: 'Design', borderClass: 'hover:border-[#00C4CC]', textClass: 'group-hover:text-[#00C4CC]' },
     { name: 'Microsoft Office', category: 'Office', borderClass: 'hover:border-[#D83B01]', textClass: 'group-hover:text-[#D83B01]' },
     { name: 'Shopee', category: 'E-commerce', borderClass: 'hover:border-[#EE4D2D]', textClass: 'group-hover:text-[#EE4D2D]' },
-    { name: 'TikTok', category: 'Social', borderClass: 'hover:border-[#FE2C55]', textClass: 'group-hover:text-[#FE2C55]' },
+    { name: 'TikTok', category: 'Social', borderClass: 'hover:border-[#000000]', textClass: 'group-hover:text-[#FE2C55]' },
     { name: 'YouTube', category: 'Social', borderClass: 'hover:border-[#FF0000]', textClass: 'group-hover:text-[#FF0000]' },
     { name: 'Facebook', category: 'Social', borderClass: 'hover:border-[#1877F2]', textClass: 'group-hover:text-[#1877F2]' },
   ];
