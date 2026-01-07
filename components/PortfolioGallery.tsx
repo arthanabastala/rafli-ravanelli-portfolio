@@ -3,17 +3,17 @@ import Section from './ui/Section';
 
 const PortfolioGallery: React.FC = () => {
   const smkWorks = [
-    { src: '/Event-Poster.jpg', alt: 'Event Banner for SMK Madinatulquran', title: 'Tumbnail Event Post' },
-    { src: '/mq-instagram-story.jpg', alt: 'Instagram Story design for SMK Madinatulquran', title: 'PPDB Poster' },
-    { src: '/mq-documentation.jpg', alt: 'Event documentation for SMK Madinatulquran', title: 'Instagram Post' },
-    { src: '/mqfest-poster.jpg', alt: 'MQFest Celebration Event Promotional Poster', title: 'MQFest Poster' }
+    { src: '/Event-Poster.webp', alt: 'Event Banner for SMK Madinatulquran', title: 'Tumbnail Event Post' },
+    { src: '/mq-instagram-story.webp', alt: 'Instagram Story design for SMK Madinatulquran', title: 'PPDB Poster' },
+    { src: '/mq-documentation.webp', alt: 'Event documentation for SMK Madinatulquran', title: 'Instagram Post' },
+    { src: '/mqfest-poster.webp', alt: 'MQFest Celebration Event Promotional Poster', title: 'MQFest Poster' }
   ];
 
   const experimentalWorks = [
-    { src: '/exp-visual-01.jpg', aspect: '4/5', span: 'col-span-1' },
-    { src: '/exp-visual-02.jpg', aspect: '4/5', span: 'col-span-1' },
-    { src: '/exp-visual-03.jpg', aspect: '9/16', span: 'col-span-1' },
-    { src: '/exp-visual-04.jpg', aspect: '9/16', span: 'col-span-1' }
+    { src: '/exp-visual-01.webp', aspect: '4/5', span: 'col-span-1' },
+    { src: '/exp-visual-02.webp', aspect: '4/5', span: 'col-span-1' },
+    { src: '/exp-visual-03.webp', aspect: '9/16', span: 'col-span-1' },
+    { src: '/exp-visual-04.webp', aspect: '9/16', span: 'col-span-1' }
   ];
 
   return (
@@ -35,10 +35,10 @@ const PortfolioGallery: React.FC = () => {
               </div>
             </div>
             <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
-              {/* Mockup 1 -  (Social Media Post 01) */}
+              {/* Mockup 1 - (Social Media Post 01) */}
               <div className="group relative overflow-hidden rounded-xl border border-neutral-100 shadow-sm aspect-[4/5] bg-neutral-100">
                 <img 
-                  src="/pt-marsi-post-01.jpg" 
+                  src="/pt-marsi-post-01.webp" 
                   alt="Promotional social media post for PT Marsi" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -47,7 +47,7 @@ const PortfolioGallery: React.FC = () => {
                {/* Mockup 2 - Eclat Romantique (Social Media Post 02) */}
                <div className="group relative overflow-hidden rounded-xl border border-neutral-100 shadow-sm aspect-[4/5] bg-neutral-100">
                 <img 
-                  src="/pt-marsi-post-02.jpg" 
+                  src="/pt-marsi-post-02.webp" 
                   alt="Eclat Romantique - Elegant perfume poster for PT Marsi" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -83,7 +83,7 @@ const PortfolioGallery: React.FC = () => {
 
              <div className="mt-4 aspect-[3/1] bg-neutral-100 rounded-xl border border-neutral-100 shadow-sm relative group overflow-hidden">
                 <img
-                    src="/mqfest-banner.jpg"
+                    src="/mqfest-banner.webp"
                     alt="Main Event Banner"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
