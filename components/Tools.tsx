@@ -41,13 +41,13 @@ const Tools: React.FC = () => {
     {
       name: 'Photoshop', category: 'Design',
       borderClass: 'hover:border-[#06A3FF]',
-      textClass: 'group-hover:text-white',
+      textClass: 'group-hover:[#05A6FB]',
       bgClass: 'hover:bg-[#011D33]'
     },
     {
       name: 'Illustrator', category: 'Design',
       borderClass: 'hover:border-[#FF9A00]',
-      textClass: 'group-hover:text-white',
+      textClass: 'group-hover:[#FF9A00]',
       bgClass: 'hover:bg-[#320000]'
     },
     {
