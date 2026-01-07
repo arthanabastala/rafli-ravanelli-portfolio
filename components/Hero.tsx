@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12 text-center">
         <div className="animate-fade-in-up">
           <span className="inline-block py-1 px-3 rounded-full bg-neutral-100 text-neutral-600 text-xs font-semibold tracking-wider mb-6">
-            PORTFOLIO 2025
+            PORTFOLIO 2026
           </span>
           <h1 className="text-5xl md:text-7xl font-bold text-neutral-900 tracking-tight mb-6 leading-tight">
             Mohammad Rafli <br className="hidden md:block" /> Ravanelli
