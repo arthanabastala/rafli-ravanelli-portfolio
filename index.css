@@ -1,0 +1,23 @@
+/* Style umum untuk kartu yang memiliki border gradient */
+.gradient-border-card {
+  background-color: white;
+  background-image: linear-gradient(white, white), linear-gradient(to right, #f5f5f5, #f5f5f5);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border: 2px solid transparent !important;
+  transition: all 0.3s ease;
+}
+
+/* Hover Figma */
+.card-figma:hover {
+  background-color: black !important;
+  background-image: linear-gradient(#000, #000), 
+                    linear-gradient(to bottom left, #0BCF83, #A259FF, #1ABBFF, #F34E20, #FF7362) !important;
+}
+
+/* Hover TikTok */
+.card-tiktok:hover {
+  background-color: black !important;
+  background-image: linear-gradient(#000, #000), 
+                    linear-gradient(to bottom right, #34BBBE, #E4004F) !important;
+}
