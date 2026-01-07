@@ -21,3 +21,13 @@
   background-image: linear-gradient(#000, #000), 
                     linear-gradient(to bottom right, #34BBBE, #E4004F) !important;
 }
+
+.card-canva:hover {
+  background-color: transparent !important;
+  /* Lapisan atas tetap hitam (atau gradient gelap), lapisan bawah adalah gradient 4 warna Canva */
+  background-image: linear-gradient(#000, #000), 
+                    linear-gradient(to bottom right, #7A29E8, #4E4CED, #268BDC, #01C3CC) !important;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border: 2px solid transparent !important;
+}
