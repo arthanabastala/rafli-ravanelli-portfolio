@@ -28,11 +28,11 @@ const Tools: React.FC = () => {
     { name: 'Figma', category: 'Design', borderClass: 'hover:border-[#A259FF]', textClass: 'group-hover:text-[#A259FF]' },
     { name: 'Photoshop', category: 'Design', borderClass: 'hover:border-[#31A8FF]', textClass: 'group-hover:text-[#31A8FF]' },
     { name: 'Illustrator', category: 'Design', borderClass: 'hover:border-[#FF9A00]', textClass: 'group-hover:text-[#FF9A00]' },
-    { name: 'CapCut', category: 'Design', borderClass: 'hover:border-[#000000]', textClass: 'group-hover:text-[#000000]' },
+    { name: 'CapCut', category: 'Design', borderClass: 'hover:border-[#000000]', textClass: 'group-hover:text-[#FFFFFF] group-hover:[-webkit-text-stroke:1px_#000000]'},
     { name: 'Canva', category: 'Design', borderClass: 'hover:border-[#00C4CC]', textClass: 'group-hover:text-[#00C4CC]' },
     { name: 'Microsoft Office', category: 'Office', borderClass: 'hover:border-[#D83B01]', textClass: 'group-hover:text-[#D83B01]' },
     { name: 'Shopee', category: 'E-commerce', borderClass: 'hover:border-[#EE4D2D]', textClass: 'group-hover:text-[#EE4D2D]' },
-    { name: 'TikTok', category: 'Social', borderClass: 'hover:border-[#000000]', textClass: 'group-hover:text-[#FE2C55]' },
+    { name: 'TikTok', category: 'Social', borderClass: 'hover:border-[#000000]', textClass: 'group-hover:text-[#FFFFFF] group-hover:[-webkit-text-stroke:1px_#000000]'},
     { name: 'YouTube', category: 'Social', borderClass: 'hover:border-[#FF0000]', textClass: 'group-hover:text-[#FF0000]' },
     { name: 'Facebook', category: 'Social', borderClass: 'hover:border-[#1877F2]', textClass: 'group-hover:text-[#1877F2]' },
   ];
