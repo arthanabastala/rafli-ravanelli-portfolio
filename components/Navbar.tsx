@@ -55,16 +55,16 @@ const Navbar: React.FC = () => {
   return (
     <header 
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-white/50 backdrop-blur-sm py-6'
+        isScrolled ? 'bg-neutral-50/95 backdrop-blur-md shadow-sm py-4 border-b border-neutral-200' : 'bg-transparent py-8'
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <Link 
           to="/" 
           onClick={handleLogoClick}
-          className="text-xl font-bold tracking-tight text-neutral-900"
+          className="text-2xl font-black tracking-tighter text-neutral-900 border-2 border-neutral-900 p-2 shadow-[2px_2px_0_0_#1A1917] bg-white hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0_0_#1A1917] transition-all"
         >
-          Rafli<span className="text-neutral-500">.</span>
+          RAFLI<span className="text-primary">.</span>
         </Link>
 
         {/* Desktop Menu */}
@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
               key={link.name}
               href={`#${link.href}`}
               onClick={(e) => handleLinkClick(e, link.href)}
-              className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors"
+              className="text-sm font-bold uppercase tracking-wider text-neutral-600 hover:text-primary transition-colors"
             >
               {link.name}
             </a>
@@ -83,22 +83,22 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-neutral-900 focus:outline-none"
+          className="md:hidden text-neutral-900 focus:outline-none bg-white border-2 border-neutral-900 p-2 shadow-[2px_2px_0_0_#1A1917]"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X size={24} strokeWidth={3} /> : <Menu size={24} strokeWidth={3} />}
         </button>
       </div>
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-neutral-100 shadow-lg py-4 px-6 flex flex-col space-y-4">
+        <div className="md:hidden absolute top-full left-0 w-full bg-neutral-50 border-b border-neutral-200 shadow-lg py-6 px-6 flex flex-col space-y-4">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={`#${link.href}`}
               onClick={(e) => handleLinkClick(e, link.href)}
-              className="text-base font-medium text-neutral-600 hover:text-neutral-900"
+              className="text-lg font-bold uppercase tracking-wide text-neutral-900 hover:text-primary"
             >
               {link.name}
             </a>

@@ -9,15 +9,15 @@ interface SkillCategoryProps {
 }
 
 const SkillCategory: React.FC<SkillCategoryProps> = ({ title, icon, skills }) => (
-  <div className="p-6 bg-white rounded-xl border border-neutral-100 shadow-sm hover:shadow-md transition-shadow">
-    <div className="w-12 h-12 bg-neutral-50 rounded-lg flex items-center justify-center text-neutral-900 mb-6">
+  <div className="p-8 bg-white rounded-2xl border-2 border-neutral-200 shadow-[4px_4px_0_0_#D5CCBB] hover:-translate-y-1 hover:shadow-[6px_6px_0_0_#D5CCBB] transition-all">
+    <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
       {icon}
     </div>
-    <h3 className="text-xl font-bold mb-4 text-neutral-900">{title}</h3>
-    <ul className="space-y-2">
+    <h3 className="text-xl font-bold mb-4 text-neutral-900 uppercase tracking-tight">{title}</h3>
+    <ul className="space-y-3">
       {skills.map((skill, index) => (
-        <li key={index} className="flex items-center text-neutral-600">
-          <span className="w-1.5 h-1.5 bg-neutral-300 rounded-full mr-3"></span>
+        <li key={index} className="flex items-center text-neutral-600 font-medium">
+          <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
           {skill}
         </li>
       ))}
@@ -29,9 +29,12 @@ const Skills: React.FC = () => {
   return (
     <Section id="skills">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-neutral-900 mb-4">My Skills</h2>
-          <p className="text-neutral-500 max-w-xl mx-auto">
+        <div className="relative text-center mb-16">
+          <span className="absolute -top-6 inset-x-0 text-4xl md:text-5xl font-script text-primary opacity-80 z-0 transform -rotate-2">
+            Capabilities
+          </span>
+          <h2 className="relative z-10 text-4xl font-black text-neutral-900 uppercase">My Skills</h2>
+          <p className="text-neutral-600 max-w-xl mx-auto font-medium mt-4">
             A balanced mix of creative design capabilities and technical IT expertise.
           </p>
         </div>

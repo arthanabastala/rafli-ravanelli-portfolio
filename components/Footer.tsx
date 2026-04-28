@@ -2,17 +2,17 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-neutral-900 text-neutral-400 py-12 border-t border-neutral-800">
+    <footer className="bg-neutral-900 border-t-[8px] border-primary text-neutral-400 py-16">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-2xl font-bold text-white mb-2">Mohammad Rafli Ravanelli</h2>
-        <p className="mb-8">Graphic Designer | IT Support | UI/UX Design</p>
+        <h2 className="text-3xl font-black text-white mb-2 uppercase">Mohammad Rafli Ravanelli</h2>
+        <p className="mb-8 font-medium">Graphic Designer | IT Support | UI/UX Design</p>
         
         <div className="flex justify-center space-x-6 mb-8">
           <a 
             href="https://www.linkedin.com/in/mohammad-rafli-ravanelli-ba7b8b210" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="hover:text-white transition-colors"
+            className="text-white hover:text-primary transition-colors font-bold uppercase tracking-wider text-sm"
           >
             LinkedIn
           </a>
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             href="https://www.instagram.com/nbstlaa/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="hover:text-white transition-colors"
+            className="text-white hover:text-primary transition-colors font-bold uppercase tracking-wider text-sm"
           >
             Instagram
           </a>

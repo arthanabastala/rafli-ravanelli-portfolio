@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 // Wrapper to handle Navbar visibility or props if needed
 const AppContent: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white text-neutral-900 font-sans selection:bg-neutral-900 selection:text-white">
+    <div className="min-h-screen border-t-[8px] border-t-primary bg-neutral-50 text-neutral-900 font-sans selection:bg-primary selection:text-white">
       <Navbar />
       <main>
         <Routes>

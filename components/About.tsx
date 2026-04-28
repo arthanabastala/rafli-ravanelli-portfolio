@@ -5,9 +5,14 @@ const About: React.FC = () => {
   return (
     <Section id="about" className="bg-neutral-50">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-neutral-900">About Me</h2>
-        <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-neutral-100">
-          <p className="text-lg md:text-xl text-neutral-600 leading-relaxed">
+        <div className="relative mb-8">
+          <span className="absolute -top-6 -left-4 text-4xl md:text-5xl font-script text-primary opacity-80 z-0 transform -rotate-2">
+            Get to know
+          </span>
+          <h2 className="relative z-10 text-4xl font-black text-neutral-900 uppercase">About Me</h2>
+        </div>
+        <div className="bg-white p-8 md:p-12 rounded-2xl shadow-[8px_8px_0_0_#D5CCBB] border-2 border-neutral-200">
+          <p className="text-lg md:text-xl text-neutral-600 leading-relaxed font-medium">
             I am a versatile professional combining a creative eye for design with a solid foundation in technical support. 
             With experience ranging from high-volume IT deployments to managing digital content strategies, 
             I excel in environments that require both <strong className="text-neutral-900">problem-solving skills</strong> and <strong className="text-neutral-900">aesthetic precision</strong>.
